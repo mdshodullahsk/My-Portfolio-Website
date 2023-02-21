@@ -8,10 +8,12 @@
     --normal: #ffffff;
     --black: #000000;
     /* --bg: #030020; */
-    --bg: #191f42;
-    --sub-bg: #7A2048;
+    --bg: #030e12;
+    --sub-bg: #202d44;
     /* --sub-bg: #05003a; */
-    --button: #800080;
+    /* --button: #800080; */
+    --button: #456464;
+    --redbutton: #FF0000;
     --danger: #f75842;
     /* --border: 0.1rem solid rgba(255, 255, 255, 0.3); */
 
@@ -106,7 +108,7 @@ img {
 
 .btn {
     display: inline-block;
-    background-color: var(--button);
+    background-color: var(--redbutton);
     color: var(--normal);
     padding: 0.5rem 2rem;
     border: 1px solid transparent;
@@ -249,7 +251,7 @@ header::before {
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #ffd000;
+    color: var(--primary);
     
 }
 .first {
@@ -257,7 +259,10 @@ header::before {
 }
 .first-heading {
     font-size: 3.5rem;
-    color: #ffd000;
+    color: var(--primary);
+}
+.contact-me {
+    
 }
 
 /* ======ABOUT ME======= */
@@ -690,14 +695,6 @@ header::before {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 2.5rem;
-}
-.contact-area {
-    width: 50%;
-}
-
-#contac-area {
-    background-color: #05003a;
 }
 
 .contact_container .contact-img {
@@ -710,13 +707,16 @@ header::before {
     /* position: relative; */
     /* align-items: center; */
     /* margin-bottom: 2rem; */
-    background-color: #f75842;
+    /* background-color: #f75842; */
 }
-
 .contact_container .contact-text {
     text-align: justify;
     line-height: 2rem;
     letter-spacing: 1px;
+    background-color: var(--sub-bg);
+    padding: 3%;
+    border-radius: 2%;
+    width: 73%;
 
 }
 .form-control {
