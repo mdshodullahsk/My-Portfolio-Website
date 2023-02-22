@@ -261,9 +261,6 @@ header::before {
     font-size: 3.5rem;
     color: var(--primary);
 }
-.contact-me {
-    
-}
 
 /* ======ABOUT ME======= */
 
@@ -698,16 +695,8 @@ header::before {
 }
 
 .contact_container .contact-img {
-    /* border: 5px solid var(--primary); */
-    /* border-radius: 50%; */
     overflow: hidden;
-    /* max-width: 35rem;
-    max-height: 35rem; */
     margin-right: 6rem;
-    /* position: relative; */
-    /* align-items: center; */
-    /* margin-bottom: 2rem; */
-    /* background-color: #f75842; */
 }
 .contact_container .contact-text {
     text-align: justify;
@@ -970,9 +959,65 @@ footer ul li a:hover {
     .btn {
         padding: 0.3rem 1rem;
     }
+    /* cover */
+    
+    .header_left {
+        flex: 50%;
+    }
+    
+    .header_right {
+        flex: 50%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .header_right>.subheading {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .header_right>.first,.first-heading {
+        font-size: 1.5rem;
+        font-weight: 350;
+    }
+    .header_right>.multi {
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+    .header_right>.hire {
+        display: inline-block;
+        background-color: var(--redbutton);
+        color: var(--normal);
+        padding: 0.1rem 0.5rem;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    
+    /* cover end */
+    .about-img {
+        display: none;
+    }
+    .about_container .about-text {
+        max-width: 90%;
+        line-height: 1.2rem;
+    }
+    
+    .about_container .about-text p {
+        margin-bottom: 0.2rem;
+    }
+    
+    .about_container .about-text .text {
+        margin-bottom: 0.5rem;
+    }
+    
+    .about_container .about-text .text span {
+        color: var(--primary);
+        font-weight: 500;
+    }
 
     .about_container{
-        flex-direction: column;
+        
+        width: 100%;
     }
     .services_container .cards {
         display: flex;
